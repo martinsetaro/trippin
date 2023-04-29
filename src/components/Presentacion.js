@@ -1,15 +1,16 @@
 import React, {useRef , useState } from 'react';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import { Text,
 SafeAreaView,
 View,
-ImageBackground,
+
 StyleSheet,
 Pressable,
 Image,
-ScrollView,
+
 Dimensions,
-Animated,
-Modal } from 'react-native';
+ } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import image1 from '../img/bicicletasR.webp';
 import image2 from '../img/trayectos.webp';
 import image3 from '../img/senderoR.webp';
@@ -22,7 +23,9 @@ import Carousel from 'react-native-snap-carousel';
 
 
 const Presentacion = () =>{
-   
+  
+  const navigation = useNavigation();
+
  const entries = [
         { id: 1, image: image1 , title:"Recorre la ciudad o los lugares que puedas disfrutar con tu bicileta, roller o solo caminando" },
         { id: 2, image: image2 , title:"Elige la ruta que te paresca más conveniente dependiendo si quieres hacerlos caminanado o con algun medio de transporte" },
@@ -39,7 +42,7 @@ const Presentacion = () =>{
             <Image source={item.image} style={style.image}/>
             <Text style={style.texto}>{item.title}</Text>
              <View>
-             {index === 3 ? <Pressable style={style.btn}>
+             {index === 3 ? <Pressable onPress={handlerNavegar} style={style.btn}>
               <Text style={style.textoBtn}>Ingresar</Text>
              </Pressable>  : <Text style={style.textoNext}>Next   ▶</Text>}
             </View>
@@ -51,7 +54,9 @@ const Presentacion = () =>{
       const itemWidth = Dimensions.get('window').width * 10;
     
      
-
+const handlerNavegar = ()=>{
+    navigation.navigate('Register')
+}
     
 
     return (

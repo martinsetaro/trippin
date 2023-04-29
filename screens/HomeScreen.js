@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState , useEffect } from 'react'
 import { 
 Text,
 SafeAreaView,
@@ -16,6 +16,16 @@ import Presentacion from '../src/components/Presentacion';
 
 const HomeScreen = () => {
 
+  const[modal,setModal] = useState(false)
+ 
+   useEffect(()=>{
+
+    setTimeout(()=>{
+      setModal(true)
+    },4000)
+    
+
+   },[])
   
 
   return (
@@ -33,8 +43,9 @@ const HomeScreen = () => {
       style={style.image}
       />
       </ImageBackground>
+
       <Modal
-      visible={true}
+      visible={modal}
       animationType='slide'
       >
         <Presentacion/>

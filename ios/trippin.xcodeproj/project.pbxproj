@@ -14,6 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-trippin-trippinTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-trippin-trippinTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		527128CCE0204747978BA9F7 /* ArvoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22040E89F1494BF69CDC429D /* ArvoBold.ttf */; };
+		901CA0E109B045DF98D8AB81 /* ArvoBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A74CD495097D43859AA83CCC /* ArvoBoldItalic.ttf */; };
+		BA6FDF56C577429681A97210 /* ArvoItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63D0F6B84AE344ED991B5BE7 /* ArvoItalic.ttf */; };
+		A1CECC449CAF4CA6AE3800B0 /* ArvoRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1991C7EEABFB4D64B0F43E02 /* ArvoRegular.ttf */; };
+		94D6B7F90C4C453CB449C414 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E3A58C626704D86BE73BB74 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = trippin/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-trippin-trippinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trippin-trippinTests.release.xcconfig"; path = "Target Support Files/Pods-trippin-trippinTests/Pods-trippin-trippinTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		22040E89F1494BF69CDC429D /* ArvoBold.ttf */ = {isa = PBXFileReference; name = "ArvoBold.ttf"; path = "../src/assets/fonts/ArvoBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A74CD495097D43859AA83CCC /* ArvoBoldItalic.ttf */ = {isa = PBXFileReference; name = "ArvoBoldItalic.ttf"; path = "../src/assets/fonts/ArvoBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		63D0F6B84AE344ED991B5BE7 /* ArvoItalic.ttf */ = {isa = PBXFileReference; name = "ArvoItalic.ttf"; path = "../src/assets/fonts/ArvoItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1991C7EEABFB4D64B0F43E02 /* ArvoRegular.ttf */ = {isa = PBXFileReference; name = "ArvoRegular.ttf"; path = "../src/assets/fonts/ArvoRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E3A58C626704D86BE73BB74 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; name = "Pacifico-Regular.ttf"; path = "../src/assets/fonts/Pacifico-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				000B3D12226B4BB0A2327905 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +158,19 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		000B3D12226B4BB0A2327905 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				22040E89F1494BF69CDC429D /* ArvoBold.ttf */,
+				A74CD495097D43859AA83CCC /* ArvoBoldItalic.ttf */,
+				63D0F6B84AE344ED991B5BE7 /* ArvoItalic.ttf */,
+				1991C7EEABFB4D64B0F43E02 /* ArvoRegular.ttf */,
+				4E3A58C626704D86BE73BB74 /* Pacifico-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +268,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				527128CCE0204747978BA9F7 /* ArvoBold.ttf in Resources */,
+				901CA0E109B045DF98D8AB81 /* ArvoBoldItalic.ttf in Resources */,
+				BA6FDF56C577429681A97210 /* ArvoItalic.ttf in Resources */,
+				A1CECC449CAF4CA6AE3800B0 /* ArvoRegular.ttf in Resources */,
+				94D6B7F90C4C453CB449C414 /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
