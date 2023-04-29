@@ -6,9 +6,11 @@ View,
 ImageBackground,
 StyleSheet,
 Pressable,
-Image
+Image,
+Modal
 } from 'react-native'
 import * as Animatable from 'react-native-animatable';
+import Presentacion from '../src/components/Presentacion';
 
 
 
@@ -30,19 +32,15 @@ const HomeScreen = () => {
       source={require('../src/img/round.png')}
       style={style.image}
       />
-      <Pressable
-      
-      style={style.btn}
+      </ImageBackground>
+      <Modal
+      visible={true}
+      animationType='slide'
       >
-        <Animatable.Text
-        animation="pulse" easing="ease-out" iterationCount="infinite"
-        style={style.texto}
-        >
-          Enter
-        </Animatable.Text>
-      </Pressable>
+        <Presentacion/>
 
-     </ImageBackground>
+      </Modal>
+
     </SafeAreaView>
   )
 }
@@ -66,14 +64,8 @@ const style = StyleSheet.create({
     backgroundColor:'orange',
     borderRadius:10
     
-  },
-  texto:{
-    fontSize:30,
-    textAlign:'center',
-    fontWeight:700,
-    textTransform:'uppercase'
-    
   }
+
 })
 
 
