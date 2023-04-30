@@ -1,19 +1,27 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Text,
 SafeAreaView,
 View,
-ImageBackground,
 StyleSheet,
 Pressable,
-Image,
 TextInput,
-Input,
 ScrollView,
 Modal } from 'react-native';
-import profiler from '../src/img/profile.png'
 import ModalLogin from '../src/components/ModalLogin';
 
+
 const Register = () =>{
+
+const [modal,setModal] = useState(false)
+
+const handlerModal = ()=>{
+setModal(true)
+
+}
+
+
+
+
     return (
      <SafeAreaView style={style.container}>
         <ScrollView>
@@ -49,14 +57,16 @@ const Register = () =>{
             <Text style={style.textBtn}>Register acount</Text>
           </Pressable>
           <Text style={style.line}>---------- Or ----------</Text>
-          <Pressable style={style.btn}>
+          <Pressable 
+          onPress={handlerModal}
+          style={style.btn}>
             <Text style={style.textBtn}>I have an account</Text>
           </Pressable>
         </View>
       </View>
       <Modal
-      visible={false}
-      animationType='slide'
+      visible={modal}
+      animationType='fade'
       >
         <ModalLogin/>
       </Modal>
@@ -118,19 +128,22 @@ const Register = () =>{
         borderColor:'#1d1d1d',
         fontSize:20,
         marginTop:5,
-        marginBottom:15
+        marginBottom:15,
+        paddingLeft:10
         
     },
     btn:{
         backgroundColor:'#71B1FF',
         height:60,
-        marginTop:50
+        marginTop:50,
+        borderRadius:10
 
     },
     btnRegister:{
-        backgroundColor:'#EFA94F',
+        backgroundColor:'#b721ff',
         height:60,
-        marginTop:60
+        marginTop:60,
+        borderRadius:10
     },
     textBtn:{
         fontSize:30,

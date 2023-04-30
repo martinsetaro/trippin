@@ -27,10 +27,10 @@ const Presentacion = () =>{
   const navigation = useNavigation();
 
  const entries = [
-        { id: 1, image: image1 , title:"Recorre la ciudad o los lugares que puedas disfrutar con tu bicileta, roller o solo caminando" },
-        { id: 2, image: image2 , title:"Elige la ruta que te paresca más conveniente dependiendo si quieres hacerlos caminanado o con algun medio de transporte" },
-        { id: 3, image: image3 , title:"Conectate con la naturaleza , solo o acompañado , aunque de a dos suena mas divertido"},
-        { id: 4, image: image4 , title:"Conentate y prepara junto a otra persona segun sus intereses un nuevo recorrido por conocer, o aprender" },
+        { id: 1, image: image1 , title:"Tour the city or places you can enjoy with your bike, rollerblade or just walking." },
+        { id: 2, image: image2 , title:"Choose a route, enjoy parks, forests, or maybe within the city you will discover incredible options." },
+        { id: 3, image: image3 , title:"Connect with nature, alone or in company, although in pairs sounds more fun."},
+        { id: 4, image: image4 , title:"You can connect with another person who has the same tastes as you, why not travel together! " },
       ]
 
       
@@ -43,7 +43,7 @@ const Presentacion = () =>{
             <Text style={style.texto}>{item.title}</Text>
              <View>
              {index === 3 ? <Pressable onPress={handlerNavegar} style={style.btn}>
-              <Text style={style.textoBtn}>Ingresar</Text>
+              <Text style={style.textoBtn}>Enter</Text>
              </Pressable>  : <Text style={style.textoNext}>Next   ▶</Text>}
             </View>
           </View>
@@ -113,7 +113,7 @@ const handlerNavegar = ()=>{
     },
     image:{
         width:370,
-        height:300,
+        height:320,
         marginLeft:30,
         marginTop:50
     },

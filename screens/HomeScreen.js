@@ -32,18 +32,15 @@ const HomeScreen = () => {
     <SafeAreaView
     style={style.container}
     >
-     <ImageBackground
-     source={require('../src/img/backgroundHome.jpg')}
-     style={style.imgBackground}
-     resizeMode='cover'
-     >
+    
+     <View style={style.prueba}>
       <Animatable.Image
       animation="slideInDown" iterationCount={5} direction="alternate"
-      source={require('../src/img/round.png')}
+      source={require('../src/img/secondLogoR.png')}
       style={style.image}
       />
-      </ImageBackground>
-
+      
+     </View>
       <Modal
       visible={modal}
       animationType='slide'
@@ -64,8 +61,10 @@ const style = StyleSheet.create({
     flex:1
   },
   image:{
-    marginHorizontal:120,
-    marginTop:260
+    marginHorizontal:20,
+    marginTop:360,
+    width:350,
+    height:200
   },
   btn:{
     marginHorizontal:120,
@@ -75,6 +74,11 @@ const style = StyleSheet.create({
     backgroundColor:'orange',
     borderRadius:10
     
+  },
+  prueba:{
+    backgroundColor:'#262c37',
+    flex:1,
+   
   }
 
 })
