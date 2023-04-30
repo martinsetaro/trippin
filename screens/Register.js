@@ -6,7 +6,8 @@ StyleSheet,
 Pressable,
 TextInput,
 ScrollView,
-Modal } from 'react-native';
+Modal, 
+ImageBackground} from 'react-native';
 import ModalLogin from '../src/components/ModalLogin';
 
 
@@ -24,7 +25,12 @@ setModal(true)
 
     return (
      <SafeAreaView style={style.container}>
+      
         <ScrollView>
+        <ImageBackground
+       source={require('../src/img/bannerRegister.png')}
+       resizeMode='cover'
+       >
       <View style={style.containerForm}>
         <Text style={style.texto}>Welcome to</Text>
         <Text style={style.subTexto}>Trippin</Text>
@@ -70,7 +76,9 @@ setModal(true)
       >
         <ModalLogin/>
       </Modal>
+       </ImageBackground>
       </ScrollView>
+     
      </SafeAreaView>
     );
   }
@@ -89,7 +97,7 @@ setModal(true)
         fontFamily:'Pacifico-Regular',
         textAlign:'center',
         marginBottom:-40,
-        marginTop:40
+        marginTop:80
     },
     subTexto:{
         fontSize:60,
@@ -133,22 +141,40 @@ setModal(true)
         
     },
     btn:{
-        backgroundColor:'#71B1FF',
-        height:60,
-        marginTop:50,
-        borderRadius:10
+      
+      height:60,
+      width:300,
+      marginTop:60,
+      marginHorizontal:25,
+      borderRadius: 4,
+      borderColor:'#16A8DE',
+      borderWidth:1,
+  shadowColor: '#000',
+  shadowOffset: {
+    width: 6,
+    height: 6,
+  }
+ 
 
     },
     btnRegister:{
-        backgroundColor:'#b721ff',
-        height:60,
-        marginTop:60,
-        borderRadius:10
+      height:60,
+      width:300,
+      marginTop:60,
+      marginHorizontal:25,
+      borderRadius: 4,
+      borderColor:'#16A8DE',
+      borderWidth:1,
+  shadowColor: '#000',
+  shadowOffset: {
+    width: 6,
+    height: 6,
+  }
     },
     textBtn:{
         fontSize:30,
         textAlign:'center',
-        color:'#fff',
+        color:'#16A8DE',
         fontWeight:700,
         marginTop:5
         

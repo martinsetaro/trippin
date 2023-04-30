@@ -33,6 +33,7 @@ const DashBoardUser = () =>{
       name="User" 
       component={ProfileUser}
       options={{
+        headerShown: false,
         tabBarIcon: ({ focused }) => {
             return (
               <View>
@@ -51,6 +52,7 @@ const DashBoardUser = () =>{
       name="Messages" 
       component={Messages}
       options={{
+        headerShown: false,
         tabBarIcon: ({ focused }) => {
             return (
               <View>
@@ -68,6 +70,7 @@ const DashBoardUser = () =>{
       name="Settings" 
       component={Settings}
       options={{
+        headerShown: false,
         tabBarIcon: ({ focused }) => {
             return (
               <View>
@@ -86,6 +89,7 @@ const DashBoardUser = () =>{
       name="Logout" 
       component={Logout}
       options={{
+        headerShown: false,
         tabBarIcon: ({ focused }) => {
             return (
               <View>

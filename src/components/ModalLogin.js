@@ -110,15 +110,16 @@ const ModalLogin = () =>{
     marginTop:20
   },
   btnRegister:{
-    backgroundColor:'#b721ff',
+    borderWidth:1,
+    borderColor:'#b721ff',
     height:60,
     marginTop:60,
     borderRadius:10
 },
 textBtn:{
+  color:'#b721ff',
   fontSize:30,
   textAlign:'center',
-  color:'#fff',
   fontWeight:700,
   marginTop:5
   
